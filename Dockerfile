@@ -1,8 +1,7 @@
-FROM		codercom/code-server
+FROM	toru2220/code-server:latest
 
-EXPOSE 		8080
-WORKDIR 	/root/coder
-VOLUME		/root/coder
-ENTRYPOINT 	["dumb-init", "fixuid", "-q", "/usr/local/bin/code-server", "--host", "0.0.0.0", "."]
+USER    root
+RUN     apt-get update && \
+        apt-get -y install python3-pip
 
-
+USER	coder
