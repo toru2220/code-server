@@ -1,9 +1,8 @@
 FROM		codercom/code-server
 
 EXPOSE 		8080
-USER 		coder
-WORKDIR 	/home/coder
-VOLUME		/home/coder
+WORKDIR 	/root/coder
+VOLUME		/root/coder
 ENTRYPOINT 	["dumb-init", "fixuid", "-q", "/usr/local/bin/code-server", "--host", "0.0.0.0", "."]
 
 
