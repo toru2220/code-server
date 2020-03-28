@@ -1,5 +1,7 @@
-FROM	codercom/code-server
+FROM	codercom/code-server:v2
 
-VOLUME	/home/coder
+WORKDIR /vscode
+VOLUME	/vscode
+VOLUME	/data
 
-USER	coder
+ENTRYPOINT ["code-server", "--host", "0.0.0.0"]
