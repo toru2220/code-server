@@ -1,7 +1,10 @@
 FROM	codercom/code-server:v2
 
-WORKDIR /vscode
-VOLUME	/vscode
+ENV 	PASSWORD password
+
+WORKDIR /root/project
+VOLUME	/root
 VOLUME	/data
 
-ENTRYPOINT ["code-server", "--host", "0.0.0.0"]
+USER	root
+ENTRYPOINT code-server --host 0.0.0.0 .
