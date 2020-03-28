@@ -1,7 +1,5 @@
 FROM	toru2220/code-server:latest
 
-USER    root
+USER	root
 RUN     apt-get update && \
         apt-get -y install python3-pip
-
-USER	coder
