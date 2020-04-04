@@ -1,8 +1,6 @@
-FROM	toru2220/code-server:scrapy
+FROM	toru2220/code-server:openjdk
 
 USER    root
 
-RUN     apt-get update && \
-        apt-get install -y --no-install-recommends openjdk-11-jdk && \
-        rm -rf /var/lib/apt/lists/*
+RUN     pip3 install Appium-Python-Client pytest pytest-xdist
 
