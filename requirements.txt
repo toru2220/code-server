@@ -6,6 +6,8 @@ jinja2
 lxml
 m3u8
 m3u8-dl
+p5py
+pep517
 mojimoji
 mpegdash
 mutagen
