@@ -30,5 +30,4 @@ urllib3
 uvicorn
 youtube_dl
 aiofiles
-PyPDF2
-pdf2image 
+
