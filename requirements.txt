@@ -30,7 +30,10 @@ urllib3
 uvicorn
 youtube_dl
 aiofiles
+<<<<<<< HEAD
 PyPDF2
 pdf2image 
 python-poppler
+=======
+>>>>>>> refs/remotes/origin/master
 
