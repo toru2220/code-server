@@ -3,7 +3,7 @@ FROM	codercom/code-server:latest
 USER    root
 
 RUN     apt-get update && \
-        apt-get -y --no-install-recommends install python3-dev python3-pip wget curl openjdk-11-jdk npm nodejs fonts-ipafont python3-setuptools task-spooler libxml2-dev libxslt1-dev gcc g++ build-essential 
+        apt-get -y --no-install-recommends install python3-dev python3-pip wget curl openjdk-11-jdk npm nodejs fonts-ipafont python3-setuptools task-spooler libxml2-dev libxslt1-dev gcc g++ build-essential cmake
 
 RUN     npm install appium-chromedriver
 
